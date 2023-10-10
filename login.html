@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesi�n</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>   
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <h2 class="active"> Sign In </h2>
+            <h2 class="inactive underlineHover">Sign Up </h2>
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="img/icono.jpeg" id="icon" alt="User Icon" />
+            </div>
+
+            <!-- Login Form -->
+            <form>
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Login">
+                <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password">
+                <input type="submit" style="background: #ffc1d5; color: black; font-weight: bold; " class="fadeIn fourth" value="Log In" onclick="iniciar()">
+            </form>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" href="#">Forgot Password?</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    if (inicioDeSesionExitoso) {
+        // Redirigir al usuario a la p�gina deseada
+        window.location.href = "pagina_de_destino.html";
+    }
+    document.getElementById("btnCerrar").addEventListener("click", function () {
+        window.history.back();
+    });
+    //function iniciar() {
+        
+    //    var sidebar = document.getElementById('sidebar');
+    //    if (sidebar) {
+    //        sidebar.style.display = 'block';
+    //    }
+    //    window.location.href = "index.html";
+    //}
+    
+</script>
